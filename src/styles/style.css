@@ -1,0 +1,150 @@
+
+.header__navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8px 16px;
+}
+
+.header__navigation .left-icons{
+    width: 146px;
+    height: 24px;
+    margin: 8px;
+    gap: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__navigation .search{
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    max-height: 40px;
+    margin: 0;
+}
+
+.search .search-input{
+    box-sizing: border-box;
+    justify-content: space-between;
+    display: flex;
+    width: 350px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 500px;
+    margin-left: 8px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.search-input input{
+    background: transparent;
+    border: none;
+    padding: 0px 100px 0 12px;
+    text-overflow: ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+    outline: none;
+}
+
+.search-input button{
+    width: 50px;
+    height: 40px;
+    border: none;
+    background-color: rgba(248, 248, 248, 1);
+    border-radius: 0px 500px 500px 0px;  
+    cursor: pointer;
+    
+}
+
+button img{
+    width: 20px;
+    height: 20px;
+}
+
+.right-icons{
+    display: flex;
+    width: 130px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.right-icons button{
+    display: flex;
+    border: none;
+    background-color: transparent;
+}
+
+#img{
+    padding: 1px 6px;
+}
+
+#img img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+body{
+    margin: 0;
+}
+main{
+    background-color: rgba(248, 248, 248, 1);
+    padding: 20px 20px 20px 40px;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    margin: none;
+}
+
+.main-container .video-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.video-actions .logo-canal{
+    display: flex;
+    width: 160px;
+    height: 42px;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-canal .nome-canal{
+    display: flex;
+    flex-direction: column;
+    
+}
+.logo-canal img{
+    width: 40px;
+    height: 40px;
+}
+
+.nome-canal h4{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600px;
+}
+
+.nome-canal p{
+    margin: 0;
+    white-space: nowrap;
+}
+
+.video-actions button{
+    color: white;
+    border: none;
+    background-color: red;
+    width: 160px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
