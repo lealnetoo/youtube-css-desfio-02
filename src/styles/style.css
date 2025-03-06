@@ -1,42 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(248, 248, 248, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 100%;
+}
+
+main{
+    margin-top: 20px;
+    width: 95%;
+    display: flex;
+    max-width: 1300px;
+}
 
 .header__navigation{
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 8px 16px;
+    align-items: center;
+    padding: 8px;
 }
 
-.header__navigation .left-icons{
-    width: 146px;
-    height: 24px;
-    margin: 8px;
-    gap: 32px;
+.left-icons, .right-icons {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header__navigation .search{
+
     display: flex;
     align-items: center;
-    max-width: 400px;
     max-height: 40px;
-    margin: 0;
+    max-width: 600px;
+    min-width: 150px;
 }
 
 .search .search-input{
-    box-sizing: border-box;
-    justify-content: space-between;
     display: flex;
-    width: 350px;
-    height: 40px;
+    flex-grow: 1;
     border: 1px solid;
     border-radius: 500px;
     margin-left: 8px;
     align-items: center;
     overflow: hidden;
 }
+
 
 .search-input input{
     background: transparent;
@@ -55,20 +80,11 @@
     background-color: rgba(248, 248, 248, 1);
     border-radius: 0px 500px 500px 0px;  
     cursor: pointer;
-    
 }
 
 button img{
     width: 20px;
     height: 20px;
-}
-
-.right-icons{
-    display: flex;
-    width: 130px;
-    align-items: center;
-    justify-content: space-between;
-
 }
 
 .right-icons button{
@@ -87,24 +103,31 @@ button img{
     border-radius: 50%;
 }
 
-body{
-    margin: 0;
-}
-main{
-    background-color: rgba(248, 248, 248, 1);
-    padding: 20px 20px 20px 40px;
-}
-.main-container{
-    display: flex;
-    flex-direction: column;
-    margin: none;
+.main-content{
+    flex: 3;
+    margin-right: 20px;
 }
 
-.main-container .video-actions{
+.player{
+    width: 100%;
+}
+
+.player iframe{
+    border-radius: 10px;
+
+}
+
+.main-content .title{
+    margin: 16px 0;
+    
+}
+
+.main-content .video-actions{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    max-width: 900px;
+    margin-bottom: 8px;
 }
 .video-actions .logo-canal{
     display: flex;
@@ -117,8 +140,8 @@ main{
 .logo-canal .nome-canal{
     display: flex;
     flex-direction: column;
-    
 }
+
 .logo-canal img{
     width: 40px;
     height: 40px;
@@ -135,15 +158,86 @@ main{
     white-space: nowrap;
 }
 
-.video-actions button{
+.video-actions #subscribe{
     color: white;
     border: none;
-    background-color: red;
+    background-color: rgba(204, 0, 0, 1);
+    border-radius: 2px;
     width: 160px;
     height: 40px;
     cursor: pointer;
 }
 
+.video-actions .actions-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    gap: 30px;
+}
+
+.actions-container button{
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.video-actions button:hover {
+    color: #000; /* Cor do texto ao passar o mouse */
+    transform: scale(1.1); /* Efeito de zoom leve ao passar o mouse */
+    transition: 0.3s ease-in-out; /* Animação suave */
+}
+
+.actions-container button img {
+    width: 20px; /* Define o tamanho dos ícones */
+    height: 20px;
+}
+
+.description{
+    margin: 8px 0;
+}
+.description h5{
+    margin-bottom: 8px;
+}
+
+.sidebar{
+    flex: 1;
+}
+
+.recommended-video {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    gap: 0px 10px;
+    width: 400px;
+}
+
+.recommended-video img{
+    width: 160px;
+    height: 90px;
+    border-radius: 5px;
+}
+
+.recommended-video .recommended-info{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.recommended-info h4{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.recommended-info p{
+    font-size: 12px;
+    color: rgba(81, 81, 81, 1)
+}
 
 
 

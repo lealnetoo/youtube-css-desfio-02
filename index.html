@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="header__navigation">
+        <nav class="header__navigation">
             <div class="left-icons">
                 <div>
                     <img src="./src/assets/icons/menu.png" alt="Menu">
@@ -38,14 +38,14 @@
                 </button>
             </div>
 
-        </div>
+        </nav>
     </header>
 
     <main>
-        <div class="main-container">
-            <div class="player">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/12WxZTpVnFE?si=l6n9_kUp41ZUQP0S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+        <div class="main-content">
+            <section class="player">
+                <iframe width="950" height="530" src="https://www.youtube.com/embed/12WxZTpVnFE?si=l6n9_kUp41ZUQP0S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
             <div class="title">
                 <h3>HTML 5 e CSS 3: O que você precisa saber antes do Framework</h3>
             </div>
@@ -57,17 +57,37 @@
                         <p>83,3 mil inscritos</p>
                     </div>
                 </div>
-                <button type="button">Inscrever-se</button>
-
+                <div class="subscribe">
+                    <button type="button" id="subscribe">Inscrever-se</button>
+                </div>
+                <div class="actions-container">
+                    <button><img src="./src/assets/icons/like.png" alt=""> 2 mil</button>
+                    <button><img src="./src/assets/icons/deslike.png" alt="">Não gostei</button>
+                    <button><img src="./src/assets/icons/share-2.png" alt="">Compartilhar</button>
+                    <button><img src="./src/assets/icons/download.png" alt="">Download</button>
+                    
+                </div>
             </div>
             <div class="description">
                 <h5>5.015 visualizações  Transmitido ao vivo em 6 de dez. de 2023</h5>
                 <p>Nessa mentoria, exploraremos as estruturas das principais tags HTML e realizar uma breve revisão sobre como o CSS funciona. Além disso, vamos enfatizar a importância de dominar HTML e CSS antes de se aventurar em um Framework</p>
             </div>
-
         </div>
-        
+
+        <aside class="sidebar">
+            <div class="recommended-video">
+                <img src="./src/assets/images/Thumb.png" alt="">
+                <div class="recommended-info">
+                    <h4>Geração Tech Unimed - BH - Ciência de Dados</h4>
+                    <p>DigitalInnovationOne</p>
+                    <p>2,1 mil visualizações Transmitido há 2 dias</p>
+                </div>
+            </div>
+    
+        </aside>
     </main>
+
+    
     
 </body>
 </html>
